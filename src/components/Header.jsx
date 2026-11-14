@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import resume from "../libs/NiteshKumavat.pdf";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -25,7 +26,7 @@ const Header = () => {
 
         <div className="flex items-center space-x-6">
           <a
-            href="../libs/NiteshKumavat.pdf"
+            href={resume}
             download="NK_Resume.pdf"
             className="flex items-center gap-2 text-xs tracking-widest uppercase text-gray-400 hover:text-[#00ff87] border border-gray-800 hover:border-[#00ff87]/50 rounded-full px-4 py-1.5 transition-all duration-200"
           >
